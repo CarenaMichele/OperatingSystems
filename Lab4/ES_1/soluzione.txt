@@ -1,0 +1,8 @@
+A
+./es1 < inFile.txt >pariFile.txt 2>dispariFile.txt
+
+B
+ls -a /home/ | wc -w
+cat lab03.txt lab04.txt | wc --lines
+ps -U root | wc --lines
+

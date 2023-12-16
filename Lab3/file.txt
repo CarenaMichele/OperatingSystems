@@ -1,0 +1,4 @@
+ls -laR end
+less mioFile.c end
+mkdir tmpdir end
+cp mioFile.c tmpDir end
