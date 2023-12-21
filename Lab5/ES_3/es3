@@ -1,0 +1,9 @@
+3.1) find / -name "*.exe" -size +1024c -executable
+3.2) find / -path "*.c" -size +100c
+3.3) find / -type f -regextype posix-extended -regex "(.*A.*a.*)|(.*a.*A.*)" -exec tail -n 3 \{} \;
+3.4) find / -user vboxuser -mindepth 3 -maxdepth 5 -size +249c -regex ".*/...." -exec wc -c '{}'\; 
+3.4.1) find / -user vboxuser -mindepth 3 -maxdepth 5 -size +249c -regex ".*/...." -exec wc -l '{}'\; 
+3.5) find -regextype posix-extended -regex ".*A.*zzz.*\...." -exec tar -zcvf '{}'.tar.gz  '{}' \; 
+3.6) find / -type d -name 'bin' -exec ls '{}' \;
+3.7) find / -regex ".*\.c" ! -user vboxuser
+3.8) find / -maxdepth 1 -user scanzio -exec chmod go-xrw '{}' \;
